@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adivina el Numero</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="texto">
+      <h1>Adivina el numero, solo tienes 10 intentos... Suerte!!!</h1>
+    </div>
+
+    <form class="form">
+      <div class="container">
+        <label for="numero">Digite un Numero</label>
+        <input
+          type="number"
+          class="numero"
+          id="numero"
+          min="1"
+          max="100"
+          required
+        />
+        <input type="submit" class="btnEnviar" value="Enviar respuesta" />
+      </div>
+    </form>
+    <div class="mensaje">
+      <p class="resultado"></p>
+      <p class="pista"></p>
+      <p class="previa"></p>
+    </div>
+
+    <script src="java.js"></script>
+  </body>
+</html>
